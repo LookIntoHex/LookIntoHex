@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerardo</title>
+	<link rel="icon" href="./assets/images/insta-ger.png">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+      <section class="banner-section section-gap p-lg-4 p-md-3">
+          <div class="container">
+              <header class="header d-flex justify-content-md-end justify-content-center pb-lg-5 pb-md-4 pb-3 pt-md-0 pt-2 mb-lg-4 mb-md-3 mb-2 font-roboto-ui">
+              </header>
+              <div class="row align-items-center mb-lg-4 mb-md-3 mb-1">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12 order-md-0 order-1">
+                      <div class="banner-intro text-md-start text-center">
+                          <p class="font-roboto-ui fs-32 mb-md-3 mb-2">
+                              CRYPTO ENTREPRENEUR
+                          </p>
+                          <h1 class="font-batman-alternate fs-56 fc-primary fs-100">
+                              Gerardo
+                          </h1>
+                          <p class="font-roboto-ui fs-20 mb-md-5 mb-4">
+                              He became a self-made crypto millionaire, raised $10,000,000 for
+                              a green, sustainable future for blockchains, & has helped
+                              hundreds of people achieve financial freedom via his YouTube
+                              channel with 10M+ impressions, all in under one year!
+                          </p>
+                          <button class="outline-btn" onclick="scrollToElement()">Learn More</button>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                      <div class="images-wrapper responsive position-relative p-0">
+                          <img src="assets/images/banner-triangle.png"
+                               alt="decorative-triangle"
+                               class="img-fluid ms-md-3" />
+                          <img src="assets/images/banner-2.png"
+                               alt="banner-image"
+                               class="img-fluid position-absolute top-50 start-50 translate-middle pt-md-3 pt-0" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="social-media-section position-relative p-lg-4 p-md-3 section-gap">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-12 col-md-12 col-12">
+                      <div class="section-heading mb-xl-5 mb-md-4 mb-3 pb-lg-4 pb-md-3 pb-2 font-roboto-ui text-center">
+                          <p class="fs-24 text-white mb-lg-4 mb-md-3 mb-lg-4 mb-3">
+                              All My Links
+                          </p>
+                          <div class="decorated-title position-relative">
+                              <h3 class="font-batman-alternate fc-primary fs-52 mb-lg-1 m-0 fs-52">
+                                  FOLLOW ME
+                              </h3>
+                              <span class="font-batman-outline position-absolute w-md-auto w-100">FOLLOW ME</span>
+                          </div>
+                      </div>
+                      <div id="learnmore"class="tab carousel-box d-flex justify-content-md-between justify-content-evenly mb-xl-5 mb-md-4 mb-3 pb-lg-4 pb-md-3 pb-2">
+                          <div role="tab"
+                               id="defaultResearchOpen"
+                               onclick="researchTabs(event, 'gera')"
+                               class="insta-page-account research-links d-flex justify-content-center align-items-center font-roboto-ui">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-ger.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="70px"
+                                       height="70px" />
+                              </figure>
+                              <div class="page-information d-md-block d-none">
+                                  <p class="page-name mb-1">gerawrdog</p>
+                                  <span class="text-grey">
+                                      Crypto Entrepreneur
+                                  </span>
+                              </div>
+                          </div>
+                          <div role="tab"
+                               onclick="researchTabs(event, 'look')"
+                               class="insta-page-account research-links d-flex justify-content-center align-items-center font-roboto-ui">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-lih.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="70px"
+                                       height="70px" />
+                              </figure>
+                              <div class="page-information d-md-block d-none">
+                                  <p class="page-name mb-1">lookintohex</p>
+                                  <span class="text-grey">HEX Statistical & Quantitative Charts</span>
+                              </div>
+                          </div>
+                          <div role="tab"
+                               onclick="researchTabs(event, 'mint')"
+                               class="insta-page-account research-links d-flex justify-content-center align-items-center font-roboto-ui">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-mint.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="70px"
+                                       height="70px" />
+                              </figure>
+                              <div class="page-information d-md-block d-none">
+                                  <p class="page-name mb-1">mintraio</p>
+                                  <span class="text-grey">
+                                      The Greenest NFT Marketplace
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="look" class="research-content">
+                          <div class="boxes-wrapper d-flex flex-wrap justify-content-center font-roboto-ui mb-5">
+                              <a href="https://www.lookintohex.com/"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/charts-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Charts</p>
+                                  </div>
+                              </a>
+                              <a href=" https://www.lookintohex.shop"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/merch-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Merch</p>
+                                  </div>
+                              </a>
+                              <a href="https://t.me/lookintohex"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/telegram-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Telegram</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.twitter.com/lookintohex"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/twitter-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Twitter</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.youtube.com/lookintohex"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/youtube-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">YouTube</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.instagram.com/lookintohex"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/instagram_icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Instagram</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div id="gera" class="research-content">
+                          <div class="boxes-wrapper d-flex flex-wrap justify-content-center font-roboto-ui mb-5">
+
+                              <a href=" https://t.me/gerawrdog"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/telegram-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Telegram</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.twitter.com/gerawrdog"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/twitter-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Twitter</p>
+                                  </div>
+                              </a>
+                              <a href="https://youtube.com/gerardog"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/youtube-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">YouTube</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.instagram.com/gerawrdog"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/instagram_icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Instagram</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div id="mint" class="research-content">
+                          <div class="boxes-wrapper d-flex flex-wrap justify-content-center font-roboto-ui mb-5">
+                              <a href="https://app.v2b.testnet.mintra.io/"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/charts-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Stake</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.mintra.io/"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/merch-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Marketplace</p>
+                                  </div>
+                              </a>
+                              <a href="https://t.me/MintraOfficial"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/telegram-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Telegram</p>
+                                  </div>
+                              </a>
+                              <a href="http://twitter.com/mintraio"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/twitter-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Twitter</p>
+                                  </div>
+                              </a>
+                              <a href="https://www.youtube.com/channel/UCWzgUQTmA48b6WMFFg1gljQ"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/youtube-icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">YouTube</p>
+                                  </div>
+                              </a>
+                              <a href="http://instagram.com/mintraio"
+                                 title="social-media"
+                                 class="smedia-link"
+                                 target="_blank">
+                                  <div class="smedia-box d-flex flex-column justify-content-center align-items-center px-xl-5 px-lg-4 px-3 py-xl-4 py-lg-3 py-3">
+                                      <figure class="smedia-icon mb-md-3 mb-2">
+                                          <img src="assets/images/instagram_icon.svg"
+                                               alt="social-icon"
+                                               width="70px"
+                                               height="70px" />
+                                      </figure>
+                                      <p class="m-0">Instagram</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                      <!-- <button class="outline-btn mx-auto d-flex"  href="https://www.mintra.io/"  target="_blank"  >Visit Website</button> -->
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="about-section position-relative p-lg-4 p-md-3 section-gap">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                      <div class="about-images-wrapper position-relative fog-design-bg">
+                          <img src="assets/images/about_image2.png"
+                               alt="about_img"
+                               class="img-fluid" />
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                      <div class="about-wrapper text-md-start text-center font-roboto-ui">
+                          <div class="section-heading mb-xl-5 mb-md-4 mb-3">
+                              <p class="fs-24 text-white mb-lg-4 mb-md-3 mb-2">
+                                  Who Am I?
+                              </p>
+                              <div class="decorated-title position-relative">
+                                  <h3 class="font-batman-alternate fc-primary fs-52 mb-lg-1 m-0">
+                                      About Me
+                                  </h3>
+                                  <span class="font-batman-outline position-absolute w-md-auto w-100">About Me</span>
+                              </div>
+                          </div>
+                          <p class="name fs-52 text-white mb-xl-5 mb-md-3 mb-2">
+                              Entrepreneur
+                          </p>
+                          <p class="fs-24 text-grey mb-lg-3 mb-md-2 mb-1">
+                              Hey! Gerardo here.
+                          </p>
+                          <p class="fs-20 text-grey mb-lg-3 mb-md-2 mb-1 fa-rotate-270">
+                              After studying math, physics, & engineering in university, I
+                              pivoted into entrepreneurship. I found myself pursuing fitness,
+                              social media, sales, and marketing, until I found crypto.
+                          </p>
+                          <p class="fs-20 text-grey mb-lg-3 mb-md-2 mb-1">
+                              Now I'm a cryptocurrency investor, streamer, and founder. Some
+                              of the projects I am passionate about include: HEX.com,
+                              PulseChain.com, PulseX.com, & Mintra.io!
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="instagram-feeds-section text-md-start text-center position-relative section-gap p-lg-4 p-md-3">
+          <div class="container">
+              <div class="row align-items-center justify-content-between">
+                  <div class="col-lg-8 col-md-7">
+                      <div class="section-heading mb-xl-5 mb-md-4 mb-3">
+                          <p class="font-roboto-ui fs-24 text-white mb-lg-4 mb-md-3 mb-2">
+                              More Content
+                          </p>
+                          <div class="decorated-title position-relative">
+                              <h3 class="font-batman-alternate fc-primary fs-52 mb-lg-1 m-0">
+                                  Instagram Feeds
+                              </h3>
+                              <span class="font-batman-outline position-absolute w-md-auto w-100">Instagram</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-5 my-md-0 my-3">
+                      <!-- Tabs -->
+                      <div class="tab d-flex justify-content-center align-items-center">
+                          <div role="tab"
+                               class="tablinks d-flex justify-content-center align-items-center font-roboto-ui px-3"
+                               onclick="instagramTabs(event, 'gerawrdog')"
+                               id="defaultOpen">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-ger.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="60px"
+                                       height="60px" />
+                              </figure>
+                          </div>
+                          <div role="tab"
+                               class="tablinks d-flex justify-content-center align-items-center font-roboto-ui px-3"
+                               onclick="instagramTabs(event, 'lookintohex')">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-lih.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="60px"
+                                       height="60px" />
+                              </figure>
+                          </div>
+                          <div role="tab"
+                               class="tablinks d-flex justify-content-center align-items-center font-roboto-ui px-3"
+                               onclick="instagramTabs(event, 'mintraio')">
+                              <figure class="rounded-circle m-0">
+                                  <img src="assets/images/insta-mint.png"
+                                       alt="insta-page"
+                                       class="rounded-circle"
+                                       width="60px"
+                                       height="60px" />
+                              </figure>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-12 mt-3 px-md-0 px-3">
+                      <div id="gerawrdog" class="tabcontent">
+                          <div class="embedsocial-hashtag"
+                               data-ref="dd9ffe8fc37b8edb770392ccc0133649d0991311"></div>
+                      </div>
+                      <div id="lookintohex" class="tabcontent">
+                          <div class="embedsocial-hashtag"
+                               data-ref="3ec1a59229e401944c17560373217fad089c1b58"></div>
+                      </div>
+                      <div id="mintraio" class="tabcontent">
+                          <div class="embedsocial-hashtag"
+                               data-ref="2754dcb198855fac0073e8863bd225c9861ecedd"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <footer class="footer-section font-segoe-ui">
+          <div class="container p-md-3 p-2 d-flex flex-md-row flex-column justify-content-between align-items-center fs-22">
+              <div class="copyright mb-md-0 mb-2">
+                  &copy; 2022, Gerardo, All rights reserved
+              </div>
+              <div class="d-flex header-right-wrapper">
+                  <!-- <span>+96 36-85 1379</span> -->
+                  <!-- <span>/</span> -->
+                  <span>gerawrdog@gmail.com</span>
+              </div>
+          </div>
+      </footer>
+      <script>
+          // Tab Function
+          function instagramTabs(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+
+          function researchTabs(evt, cityName) {
+              var i, researchTabcontent, researchTablinks;
+              tabcontent = document.getElementsByClassName("research-content");
+              for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("research-links");
+              for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultResearchOpen").click();
+          (function (d, s, id) {
+              var js;
+              if (d.getElementById(id)) {
+                  return;
+              }
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://embedsocial.com/cdn/ht.js";
+              d.getElementsByTagName("head")[0].appendChild(js);
+              console.log(s);
+          })(document, "script", "EmbedSocialHashtagScript");
+		  
+		  function scrollToElement() {
+  var elmnt = document.getElementById("learnmore");
+  elmnt.scrollIntoView({behavior:'smooth', block:'start'});
+}
+      </script>
+  </body>
+</html>

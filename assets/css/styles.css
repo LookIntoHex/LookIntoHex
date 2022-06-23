@@ -1,0 +1,446 @@
+@import url(./bootstrap.min.css);
+@import url(./fonts.css);
+:root {
+  /* Colors */
+  --primary: #f13476;
+  --title-shadow: #191919;
+  --grey: #c4c4c4;
+  --smedia-box: #161616;
+  --smedia-title: #979797;
+  --footer-text: #727272;
+  --tab-right-border: #393939;
+  --green: #02da05;
+  /* Font Families */
+  --font-primary: "Barkentina";
+  --font-secondary: "BatmanForeverAlternate";
+  --font-secondary-outline: "BatmanForeverOutline";
+  --font-segoe-ui: "Segoe UI";
+}
+body {
+  background-color: #000;
+}
+.font-barkentina {
+  font-family: var(--font-primary);
+}
+
+.font-batman-outline {
+  font-family: var(--font-secondary-outline);
+}
+.font-batman-alternate {
+  font-family: var(--font-secondary);
+}
+.font-segoe-ui {
+  font-family: var(--font-segoe-ui);
+}
+.fc-primary {
+  color: var(--primary);
+}
+.fs-100 {
+  font-size: 100px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+.fs-52 {
+  font-size: 52px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.text-grey {
+  color: var(--grey);
+}
+.section-gap {
+  margin-bottom: 80px;
+}
+/* Buttons */
+.outline-btn {
+  color: var(--bs-white);
+  border: 2px solid var(--bs-white);
+  border-radius: 10px;
+  background: transparent;
+  padding: 14px 32px;
+  font-size: 20px;
+  transition: 0.3s all ease-in;
+}
+.outline-btn:hover {
+  color: var(--primary);
+  background: var(--bs-white);
+}
+.outline-btn.primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 8px 18px;
+}
+.outline-btn.primary:hover {
+  background-color: var(--primary);
+  color: var(--bs-white);
+}
+.section-heading .decorated-title span {
+  top: 50%;
+  /* In 1920 should be 120px  */
+  font-size: 90px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.about-wrapper .section-heading .decorated-title span {
+  left: 8px;
+}
+.section-heading .decorated-title span {
+  font-size: 90px;
+}
+/* .instagram-feeds-section {
+  padding-top: 100px;
+  padding-bottom: 24px;
+} */
+.insta-page-account {
+  gap: 20px;
+}
+.page-information .page-name {
+  font-size: 28px;
+  color: var(--green);
+}
+.instagram-feeds-section .section-heading .decorated-title span {
+  transform: translate(0%, -50%);
+  left: 0;
+}
+.social-media-section .section-heading .decorated-title span {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media-section {
+  background-image: url(../images/smedia-section-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+}
+.social-media-section::before,
+.social-media-section::after {
+  position: absolute;
+  content: "";
+  width: 181px;
+  height: 181px;
+  background-image: url(../images/triangle-decoration.png);
+  animation: spin 10s linear 0s infinite reverse;
+}
+.social-media-section::before {
+  top: 0;
+  left: 0;
+}
+.about-section {
+  overflow-x: clip;
+}
+.social-media-section::after,
+.about-section::after {
+  right: -60px;
+  bottom: 0%;
+}
+.about-section::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/insta-triangle-design.png);
+  width: 181px;
+  background-repeat: no-repeat;
+  min-height: 181px;
+  z-index: -1;
+  animation: spin 10s linear 0s infinite reverse;
+}
+.about-wrapper .name {
+  line-height: 43px;
+}
+
+/* Banner Section */
+.banner-section {
+  background-image: url(../images/banner-bg.jpg);
+  color: var(--bs-white);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-section .images-wrapper img:last-of-type {
+  max-width: 90%;
+}
+.banner-section .header-right-wrapper {
+  gap: 20px;
+}
+.about-section .fog-design-bg::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/about-fog-design.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  right: -35px;
+  transform: rotate(270deg);
+  z-index: -1;
+  opacity: 1;
+}
+.about-images-wrapper {
+  padding-right: 60px;
+}
+/* Instagram Tabs */
+.tab {
+  overflow: hidden;
+}
+.tablinks {
+  gap: 15px;
+  opacity: 0.5;
+  border-right: 2px solid var(--tab-right-border);
+  cursor: pointer;
+}
+.research-links,
+.tablinks {
+  transition: all 100ms linear;
+}
+.tablinks:last-of-type {
+  border-right: 0px;
+}
+.research-links {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.tablinks .about-page p {
+  margin-bottom: 0;
+}
+.tablinks .about-page .page-name {
+  font-size: 25px;
+}
+.tab .tablinks.active,
+.tab .tablinks:hover,
+.tab .research-links.active,
+.tab .research-links:hover {
+  opacity: 1;
+}
+.tabcontent,
+.research-content {
+  display: none;
+}
+
+/* Social Media Section */
+.boxes-wrapper {
+  gap: 15px;
+}
+.boxes-wrapper .smedia-link {
+  text-decoration: none;
+  background-color: var(--smedia-box);
+  border-radius: 15px;
+  font-size: 22px;
+  color: var(--smedia-title);
+  flex: 0 0 200px;
+  width: 200px;
+}
+.smedia-icon {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+/* Footer */
+.footer-section {
+  background-color: var(--smedia-box);
+  color: var(--footer-text);
+}
+#es-header .es-follow-btn {
+  background-color: red;
+}
+.about-bitcoins {
+  top: 80%;
+  left: 55%;
+}
+.carousel-box {
+  gap: 15px;
+}
+.animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1399px) {
+  .section-heading .decorated-title span {
+    font-size: 80px;
+  }
+  .fs-52 {
+    font-size: 40px;
+  }
+  .boxes-wrapper .smedia-link {
+    flex: 0 0 170px;
+    width: 170px;
+  }
+  .about-bitcoins {
+    transform: scale(0.75);
+    left: 50%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .section-gap {
+    margin-bottom: 70px;
+  }
+  .about-bitcoins {
+    transform: scale(0.7);
+    left: 45%;
+    top: 70%;
+  }
+  .section-heading .decorated-title span {
+    font-size: 60px;
+  }
+  .fs-52 {
+    font-size: 40px;
+  }
+  .fs-56 {
+    font-size: 44px;
+  }
+  .fs-40 {
+    font-size: 36px;
+  }
+  .fs-32 {
+    font-size: 28px;
+  }
+  .fs-24 {
+    font-size: 22px;
+  }
+  .page-information .page-name {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .page-information .page-name {
+    font-size: 26px;
+  }
+  .fs-56 {
+    font-size: 38px;
+  }
+  .fs-52 {
+    font-size: 32px;
+  }
+  .fs-32 {
+    font-size: 24px;
+  }
+  .fs-20 {
+    font-size: 18px;
+  }
+  .section-heading .decorated-title span {
+    font-size: 40px;
+  }
+  .insta-page-account figure img {
+    width: 60px;
+    height: 60px;
+  }
+  .carousel-box {
+    gap: 15px;
+  }
+  .insta-page-account span {
+    font-size: 14px;
+  }
+  .outline-btn {
+    padding: 8px 28px;
+    font-size: 18px;
+  }
+  .section-gap {
+    margin-bottom: 50px;
+  }
+  .about-man-img {
+    left: -30px;
+  }
+  .about-images-wrapper {
+    padding-right: 30px;
+  }
+}
+/* For Mobile Devices */
+@media screen and (max-width: 767px) {
+  .section-gap {
+    margin-bottom: 40px;
+  }
+  .banner-section {
+    background-size: 100% 63%;
+  }
+  .about-images-wrapper {
+    padding-right: 0px;
+  }
+  .images-wrapper,
+  .about-images-wrapper {
+    transform: scale(0.9);
+  }
+  .images-wrapper img:first-of-type {
+    transform: scale(0.88);
+  }
+  .banner-intro {
+    padding-top: 30px;
+  }
+  .about-wrapper .section-heading .decorated-title span {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-wrapper,
+  .banner-intro {
+    padding-inline: 5px;
+  }
+  .fs-52 {
+    font-size: 28px;
+  }
+  .fs-56 {
+    font-size: 32px;
+  }
+  .fs-32 {
+    font-size: 22px;
+  }
+  .fs-20 {
+    font-size: 16px;
+  }
+  .bitcoin-img {
+    max-width: 100%;
+  }
+  .about-man-img {
+    left: 0;
+    top: -10px;
+  }
+  .about-section .fog-design-bg::after {
+    left: 0;
+    right: 0;
+  }
+  .social-media-section::before,
+  .social-media-section::after,
+  .about-section::after {
+    display: none;
+  }
+  .smedia-icon,
+  .smedia-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  .boxes-wrapper .smedia-link {
+    flex: 0 0 150px;
+    width: 150px;
+    font-size: 16px;
+  }
+}
